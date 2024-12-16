@@ -1,0 +1,16 @@
+Spring Security 2
+- Using yml property structure
+- Always have DTOs for your Models
+- Created Password Encoder as a generalized method
+- User Registration (Token Gen / Verification / Resend on Expire)
+- Password Reset (Token Gen / Verification) Same as User Registration
+    - Flow : In-General Scenario
+        - User Send request for password reset
+        - Mail is sent through a token which is maintained by DB
+        - if valid then it shows the password reset form
+        - New password details from the reset form are saved
+- Password Change
+    - Flow : In-General Scenario
+        - User Send request for password change with old password + new password + email
+        - verify old password for user by email
+        - save new encoded password

@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: Spring Security Proj 003
+  data:
+    mongodb:
+      uri: mongodb+srv://{username}:{password}S@{Cluster}/mySpringSecurityDB2?retryWrites=true&w=majority&appName={AppName}
